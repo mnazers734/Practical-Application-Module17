@@ -165,7 +165,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
 
 ![alt text](image.png)
 <h3>The image above shows the Pipeline used for training KNN models. The Pipelines for other classifiers have a similar structure. The <b>selector</b> applies SelectKMeans to select the top 10 features from the feature set created from the transformer</h3>
-
+<br/>
 <div>
 <table border="1">
 <caption><h3>Classifier models with feature selection using SelectKBest with K = 10</h3></caption>
@@ -224,7 +224,6 @@ The barchart below shows that the acceptance rate for new programs was very cons
     </tr>
   </tbody>
 </table>
-
 </div>
 <h3>Several methods for feature selection were tried including manual feature selection, SelectKBest and SelectFromModel (using LogisticRegression and RandomForrest). All methods of feature selection produced similar results with SelectKBest with K=10 producing slightly better results for Precision, Recall and F1 performance metrics. However, these results were not much better than the results for the basic classification models - in some cases the results were slightly worse.</h3>
 <br/>
@@ -288,7 +287,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
 </table>
 </div>
 <h3>The table above shows that hyper-parameter tuning using GridSearchCV did not greatly improve performance for classification models. <b>Note:</b>KNeighborsClassifier and SVC GridSearchCV could not be completed on full dataset due to excessive runtime. The process was repeated on the limited dataset bank-additional.csv. The results for the limited dataset are in the table below.</h3>
-
+<br/>
 <div>
 <table border="1">
   <caption><h3>Hyperparameter tuning using GridSearchCV for limited dataset</h3></caption>
@@ -347,11 +346,9 @@ The barchart below shows that the acceptance rate for new programs was very cons
     </tr>
   </tbody>
 </table>
-
 </div>
-
 <h3>The table above shows that hyper-parameter tuning using GridSearchCV using the dataset with limited number of records (approx one tenth of full dataset). This produced the best F1 score for any trained models. The score was .293 for the Decision Tree Classifier.</h3>
-
+<br/>
 <div>
 <table border="1">
   <thead>
@@ -440,6 +437,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
 </table>
 </div>
 <h3>As a final test, the threshold levels for positive output was varied between 0 and 1. The metric scores were calculated for each threshold. This method produced the best F1 score of all other training attempts with a value of .3467</h3>
+<br/>
 
 ## Results and Recommendations
 The EDA of the customer acceptance for long-term deposit applications through direct marketing campaigns by a Portuguese bank revealed the following insights:
