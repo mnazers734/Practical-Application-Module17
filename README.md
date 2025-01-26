@@ -100,6 +100,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
 ## ML Data Analysis
 <h3>Several Classification Models were trained on the selected parameters using a variety of techniques. The result metrics are shown in the tables below.</h3>
  
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -249,6 +250,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
     </tr>
   </tbody>
 </table>
+
 </div>
 <h3>Several methods for feature selection were tried including manual feature selection, SelectKBest and SelectFromModel (using LogisticRegression and RandomForrest). All methods of feature selection produced similar results with SelectKBest with K=10 producing slightly better results for Precision, Recall and F1 performance metrics. However, these results were not much better than the results for the basic classification models - in some cases the results were slightly worse.</h3>
 <br/>
@@ -341,7 +343,7 @@ The barchart below shows that the acceptance rate for new programs was very cons
     }
 </style>
 <table border="1" class="dataframe">
-<caption><h3>Hyperparameter tuning using GridSearchCV for limited dataset</h3></caption>
+  <caption><h3>Hyperparameter tuning using GridSearchCV for limited dataset</h3></caption>
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -397,7 +399,9 @@ The barchart below shows that the acceptance rate for new programs was very cons
     </tr>
   </tbody>
 </table>
+
 </div>
+
 <h3>The table above shows that hyper-parameter tuning using GridSearchCV using the dataset with limited number of records (approx one tenth of full dataset). This produced the best F1 score for any trained models. The score was .293 for the Decision Tree Classifier.</h3>
 
 <div>
